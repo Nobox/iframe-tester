@@ -1,4 +1,6 @@
 $('#nobox-iframe').iFrameResize({
     log: true,
-    enablePublicMethods: true
+    enablePublicMethods: true,
+    checkOrigin: false,
+    heightCalculationMethod: 'grow'
 });
