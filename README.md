@@ -1,14 +1,13 @@
 iframe-tester
 =============
 
-initialization
-1. npm install
+### initialization
 
-building
-1. gulp build
-2. gulp serve
-3. profit
+run `npm install`
 
+### building
+run `gulp build` to build the thing for deployment.
+run `gulp serve` to serve it in your localhost:9000
 
 ----
 
