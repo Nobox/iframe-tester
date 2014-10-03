@@ -79,7 +79,6 @@ gulp.task('default', ['clean'], function () {
 gulp.task('connect', function () {
     var connect = require('connect');
     var app = connect()
-        .use(require('connect-livereload')({ port: 35729 }))
         .use(connect.static('app'))
         .use(connect.static('.tmp'))
         .use(connect.directory('app'));
@@ -114,17 +113,15 @@ gulp.task('wiredep', function () {
 });
 
 gulp.task('watch', ['connect', 'serve'], function () {
-    var server = $.livereload();
 
     // watch for changes
-
     gulp.watch([
         'app/*.html',
         '.tmp/styles/**/*.css',
         'app/scripts/**/*.js',
         'app/images/**/*'
     ]).on('change', function (file) {
-        server.changed(file.path);
+
     });
 
     gulp.watch('app/styles/**/*.scss', ['styles']);
