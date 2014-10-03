@@ -1,1 +1,6 @@
-console.log('\'Allo \'Allo!');
+$('#nobox-iframe').iFrameResize({
+    log: true,
+    enablePublicMethods: true,
+    checkOrigin: false,
+    heightCalculationMethod: 'lowestElement'
+});
