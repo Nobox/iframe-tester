@@ -11,5 +11,6 @@ run `gulp serve` to serve it in your localhost:9000
 
 ----
 
-remember to change the iframe URL to test other iframes. 
+#### Testing something else 
+Change the iframe's src attribute to test other sources. 
 
